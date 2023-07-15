@@ -1,0 +1,286 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+
+*
+{   
+  
+   
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+  background-color:#101010;
+  color:#ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+header
+{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   padding:40px 5%;
+}
+
+.logo
+{
+  width:180px;
+  height:40px;
+  cursor:pointer;
+}
+
+nav li a{
+    text-decoration:none;
+    color:#ffffff;
+}
+
+.navlinks li{
+     list-style-type:none;
+     display:inline-block;
+     padding:0px 20px;
+     font-weight:bold;
+     
+}
+
+
+.contact
+{
+  background-color:#5A45DD;
+  border:none;
+  padding:10px 20px;
+  font-weight:bold;
+  border-radius:5px;
+  color:#ffffff;
+
+}
+
+.main-image
+{
+     width:90%;
+     height:85vh;
+     margin:auto;
+     display:block;
+     position:relative;    
+     opacity:0.8;
+}
+.main-text
+{
+  position: absolute;
+  bottom: 8px;
+  right: 75px;
+  font-size:3.8rem;
+  font-weight:900;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-right:30px;
+  
+ 
+}
+
+.intro,.sub-intro-div,.conclude-div
+{
+   margin:70px;  
+   width:90%;
+}
+
+#intro-title,#sub-intro,#conclude-title
+{
+  font-weight:bold;
+  font-size:250%;
+  padding:20px 0px;
+}
+
+.sub-image
+{
+  width:90%;
+  height:30vh;
+  margin:auto;
+  display:block;
+}
+
+
+footer .container
+{
+   background-color:#ffffff;
+   width:90%;
+   bottom:0px;
+   height:120vh;
+   margin:70px;
+   color:#000000;
+   font-weight: bold;
+   font-size:0.95rem;
+   display:grid;
+   grid-template-columns: 1fr 1fr 0.2fr 1.5fr;
+   grid-template-rows: auto;
+   grid-template-areas: 
+     "header header header1 header1"
+     "main main2 . sidebar"
+     "footer footer footer footer";
+}
+
+.footer-left img
+{
+    width:100%;
+    height:40%;
+    margin:40px;
+    grid-area: header;
+   
+}
+
+li{
+  list-style-type:none;
+}
+
+.footer-left-left
+{
+  grid-area: main;
+  padding:5px 2px;
+  margin-left:50px;
+  font-weight:lighter;
+}
+
+
+.footer-left-right
+{
+  grid-area: main2;
+  padding:2px;
+  font-weight:lighter;
+}
+
+#heading1,#heading2
+{
+  padding-bottom:20px;
+  font-weight:bolder;
+}
+
+.footer-right
+{
+  display:flex;
+  justify-content:flex-end;
+  flex-direction:row;
+  align-items:center;
+  grid-area: header1;
+  margin-right:20px;
+}
+
+.social-links li
+{
+  display: inline-block;
+  padding:30px;
+}
+
+i{
+  width:75%;
+  height:50%;
+}
+
+#heading3
+{
+  font-weight:bolder;
+  font-size:2rem;
+  padding-bottom:20px;
+}
+#sub-heading3
+{
+  font-weight:200;
+  padding-bottom:20px;
+}
+.footer-right-bottom
+{
+  grid-area:sidebar;
+  padding-bottom:10px;
+  margin-right:20px;
+}
+#email{
+  padding:20px;
+  width:90%;
+
+}
+.arrow-button i
+{
+  color:#ffffff;
+}
+
+.arrow-button 
+{
+  transform: translateX(-50px);
+  padding:15px;
+  background-color:#5A45DD;
+  border:none;
+  border-radius:5px;
+}
+#news
+{
+  font-size:0.1rem;
+  display:inline;
+  padding-top:10px;
+}
+hr {
+  height: 1px;
+  border: 0;
+  background:#D8D8D8;
+  width:90%;
+  margin:50px auto;
+}
+
+
+.footer-footer
+{
+   grid-area:footer;
+
+}
+#footer-text-heading
+{
+   padding-top:20px;
+   margin:50px;
+}
+#footer-text-heading2
+{
+   padding:2px;
+   margin:50px;
+   font-weight:lighter;
+}
+
+.bottom-text span
+{
+  margin-left:30px;
+  display:inline-block;
+  padding-left:20px;
+}
+
+
+{
+
+}
+
+@media (max-width: 812px) {
+  footer .container {
+      grid-template-columns: repeat(1,1fr); 
+      margin:20% auto;
+  
+  }
+  .navlinks{
+    display:none
+  }
+  .main-image,.intro,.sub-intro-div,.conclude-div,#intro-title,#sub-intro,#conclude-title,.sub-image{
+    margin:0 auto;
+    font-size:1rem;
+    margin:5% auto;
+  }
+  .arrow-button 
+  {
+    display:inline-block;
+    position:absolute;
+  }
+
+
+}
+  @media (min-width: 812px)
+  {
+    .toggle-btn
+  {
+    display:none;
+    float:right;
+
+   
+  }
+ }
